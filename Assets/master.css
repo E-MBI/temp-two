@@ -732,7 +732,7 @@ background-color:#f00;
     padding:13px;
 }
 
-/* ********Before 2 ************ */
+/* ********After ************ */
 
 .f::after{
     content: "";
@@ -777,8 +777,449 @@ background-color:#f00;
 
 /* *********spanname ****** */
 
+#spanname{
+
+    width: 0px;
+    height: 0px;
+    border-top: 20px solid transparent;
+    border-right: 20px solid #4caf50;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid transparent;
+    position: absolute;
+    top: 26%;
+    left: -7%;
+}
+
+/* **********other Article************ */
+
+.papa-p{
+
+
+    margin: 20px auto;
+    padding: 34px;
+    width: 70%;
+    border: 1px solid rgb(42, 42, 43);
+    background-color: rgb(221, 215, 215);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+
+}
+
+.ch-p{
+
+
+    margin: 20px auto;
+    padding: 34px;
+    width: 70%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f00;
+    font-weight: bold;
+    position: relative;
+    counter-increment:num;
+
+
+}
+
+/* *******before-child****** */
+
+.ch-p::before{
+
+    content: counter(num);
+    background-color: #f44336;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 6px;
+    height: 42px;
+    padding: 22px 32px;
+
+
+}
+
+
+/* *******After-child****** */
+
+.ch-p::after{
+
+    content: "";
+    background-color: #f00;
+    font-size: -4px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 0%;
+    width: 8px;
+    height: 86px;
+    right: 0px;
+}
+
+
+/* *******circle****** */
+
+.papa-circle{
+
+    margin:40px auto;
+    padding: 30px;
+    background-color:#eee;
+    width: 1200px;
+    height:200px;
+    text-align: center;
+
+  
+    
+
+
+}
 
 
 
+.papa-circle >div{
+  
+            margin: 15px;
+        background-color: #ececec;
+        color: #9c27b0;
+        display: inline-block;
+        height: 100px;
+        border-radius: 50%;
+        text-align: center;
+        border: 1px solid #242424;
+        box-shadow: 6px 4px 0px 2px #2196f3, -6px -4px 0px 2px #e91e63;
+        position: relative;
+        width: 100px;
+        padding: 37px 0px;
+
+}
+
+
+.cir-one::before {
+  
+    border-radius: 50%;
+    content: '1';
+    color: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: rgb(42, 42, 43);
+    position: absolute;
+    top: -11%;
+    left: 30%;
+
+}
+
+.cir-two::before{
+
+border-radius: 50%;
+content: '2';
+color: white;
+width: 30px;
+height: 30px;
+text-align: center;
+background-color: rgb(42, 42, 43);
+position: absolute;
+top: -11%;
+left: 30%;
+
+}
+
+.cir-three::before{
+
+border-radius: 50%;
+content: '3';
+color: white;
+width: 30px;
+height: 30px;
+text-align: center;
+background-color: rgb(42, 42, 43);
+position: absolute;
+top: -11%;
+left: 30%;
+
+}
+
+
+/* ******* tow-circle****** */
+
+
+.two-circle{
+    margin:30px auto;
+    padding:20px;
+    width:100px;
+    height:100px;
+    background-color:rgb(218, 216, 218);
+    box-shadow:inset 4px -4px 10px grey, inset -4px 3px 10px grey ;
+    border-radius: 4% 43%;
+  
+}
+
+
+/* ***********Product's*********** */
+
+.papa-product{
+
+    margin:40px auto;
+    width: 56%;
+    border:1px solid gray; 
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.papa-product div{
+    
+    display: inline-block;
+    margin: 32px;
+    padding: 15px;
+
+}
+
+/* *********Basic*********** */
+.ch-basic{
+
+    background-color: #d8d8d8;
+    height: 300px;
+    width: 230px;
+    text-align: center;
+    position:relative;
+
+}
+
+.ch-basic h2 {
+    background-color: #03a9f4;
+    padding: 8px;
+    margin: 14px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+ 
+
+}
+
+.ch-basic span{
+
+    background-color: #acacac;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    padding: 58px 0px;
+    margin: 15px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+
+
+}
+
+.ch-basic::after{
+
+    border-radius: 50%;
+    content: 'OR';
+    color: white;
+    width: 31px;
+    height: 26px;
+    text-align: center;
+    padding: 2px 1px;
+    background-color: #03a9f4;
+    position: absolute;
+    top: 40%;
+    right: -24%;
+    letter-spacing:2.5px;
+
+}
+
+
+
+
+/* *********pro*********** */
+
+.ch-pro{
+
+    background-color: #d8d8d8;
+    height: 300px;
+    width: 230px;
+    text-align: center;
+    position:relative;
+
+}
+
+.ch-pro h2 {
+    background-color: #03a9f4;
+    padding: 8px;
+    margin: 14px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+ 
+
+}
+
+.ch-pro span{
+
+    background-color: #acacac;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    padding: 58px 0px;
+    margin: 15px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+
+
+}
+
+.ch-pro::before{
+
+    content: '';
+    width: 2px;
+    height: 300px;
+    background-color: #03a9f4db;
+    position: absolute;
+    top: 0%;
+    left: -26px;
+
+}
+
+/* *************SectionTwo****************** */
+
+.parent-a{
+
+background-color: #ece9e9ea;
+margin: 30px auto;
+padding:15px;
+transition:0.5s 0s linear ;
+text-align:center;
+
+}
+
+.parent-a:hover{
+
+transform:translate(0px, -8%);
+
+}
+
+
+.child-dl{
+
+background-color:gray;
+margin:30px auto;
+padding:5px;
+transition:0.5s 0.5s linear;
+text-align:center;
+width:50%;
+height:50px;
+color:#fff;
+
+}
+
+
+.child-dl:hover{
+    transform:translate(0%, 25%);
+    font-weight: bold;
+    color: #9c27b0;
+
+}
+
+/* h ********** */
+
+.h{
+width: 400px;
+margin:40px auto;
+font-size: 20px  !important;
+background-color: #a5a1a1  !important;
+position: relative;
+
+}
+
+.h::after{
+ 
+content: "Mahmoud";
+position: absolute;
+top: 30%;
+left: 38%;
+
+}
+
+.h span{visibility: hidden;}
+
+/* *******3div****** */
+
+:root{
+
+--maincolor:#009688;
+--mainpadding:15px;
+
+
+}
+
+
+.rootdiv div{
+
+width:600px;
+margin:20px auto;
+color: red;
+border:2px solid black;
+border:2px solid var(--maincolor);
+color:var(--maincolor);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+/* ************Footer************** */
+
+footer{
+
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+    color:white;
+    background-color: #302e2e;
+}
+
+footer p {
+
+margin: 10px;
+padding:5px;
+text-align:center;
+font-weight: bold;
+font-family:Arial, Helvetica, sans-serif;
+font-size: 20px;
+
+
+}
 
 
